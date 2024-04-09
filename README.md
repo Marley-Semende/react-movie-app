@@ -27,7 +27,7 @@ A movie discovery web application built with React.js. The app allows a user to 
 
 ### Site View on different screen sizes
 
-![](../final-project/src/assets/screenshot.png)
+![](../src/assets/screenshot.png)
 
 
 ### Links
