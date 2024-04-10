@@ -7,7 +7,7 @@ const axiosInstance = axios.create({
   params: {
     api_key: apiConfig.apiKey,
     include_adult: false,
-    include_video: false,
+    include_video: true,
     language: "en-US",
     sort_by: "popularity.desc",
   },

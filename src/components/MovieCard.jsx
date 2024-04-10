@@ -5,6 +5,7 @@ import plusIcon from "../assets/icon-plus.svg";
 import starIcon from "../assets/icon-star.svg";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie, addToWatchList }) => {
   const [genres, setGenres] = useState([]);
@@ -21,7 +22,8 @@ const MovieCard = ({ movie, addToWatchList }) => {
     fetchGenres();
   }, []);
 
-  const onClick = () => {
+  const onClick = (e) => {
+    e.preventDefault();
     addToWatchList(movie);
     toast.success("Added to watchlist", {
       position: "top-right",
@@ -37,6 +39,7 @@ const MovieCard = ({ movie, addToWatchList }) => {
   });
 
   return (
+    <Link to={`/movie/${movie.id}`} className="movie-card-link">
     <div className="movie-card">
       <img
         className="movie-poster"
@@ -59,6 +62,7 @@ const MovieCard = ({ movie, addToWatchList }) => {
         </div>
       </div>
     </div>
+   </Link>
   );
 };
 

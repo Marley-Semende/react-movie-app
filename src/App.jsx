@@ -11,6 +11,8 @@ import MovieList from "./components/MovieList";
 import MovieSearch from "./components/MovieSearch";
 import WatchList from "./components/WatchList";
 import githubIcon from "./assets/icon-github.svg";
+import MovieDetail from "./components/MovieDetail";
+
 
 const App = () => {
   const [watchlist, setWatchlist] = useState([]);
@@ -33,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div>
+      <div>
       <Header handleSearchResults={handleSearchResults} />
 
       <Routes>
@@ -42,6 +44,7 @@ const App = () => {
           element={<AllMovies />}
           addToWatchList={addToWatchList}
         />
+        <Route path="/movie/:id" element={<MovieDetail />} />
 
         <Route
           path="/popular"
