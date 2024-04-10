@@ -74,6 +74,7 @@ npm install
 ```bash
 npm run dev
 ```
+Checkout the ```.env.example``` in the root folder for ```.env structure```
 
 
 
