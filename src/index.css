@@ -29,7 +29,7 @@ body {
   width: 98%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer{
@@ -107,7 +107,7 @@ font-family: "Quicksand";
 .search-icon {
   position: absolute;
   margin-left: -35px;
-  top: 47px;
+  top: 38px;
   cursor: pointer;
   
 }
@@ -270,10 +270,11 @@ font-family: "Quicksand";
 
 .detail-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: auto;
+  margin: 110px auto 0 auto;
   display: block;
 }
 
@@ -423,7 +424,7 @@ font-family: "Quicksand";
   }
 
   .search-icon {
-    top: 110px;
+    top: 100px;
     margin-left: -40px;
   }
 

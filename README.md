@@ -32,8 +32,8 @@ A movie discovery web application built with React.js. The app allows a user to 
 
 ### Links
 
-- View code: [Repository]()
-- Live Demo: [LiveSite URL]()
+- View code: [Repository](https://github.com/Marley-Semende/react-movie-app)
+- Live Demo: [LiveSite URL](https://marley-marl-movie-app.netlify.app/)
 
 ## My process
 
